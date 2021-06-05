@@ -23,8 +23,8 @@ body {
   
   .description{
     white-space: pre-wrap;
-    border-top: solid #000000;
-    border-bottom: solid black;
+    /* border-top: solid #000000;
+    border-bottom: solid black; */
   }
   
   .time-block{
