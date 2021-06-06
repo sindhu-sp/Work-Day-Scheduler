@@ -46,14 +46,13 @@ $(document).ready(function () {
             }
         })
     }
+    // when the refresh button is clicked the added task persists
+    $(".refreshBtn").on ("click", function () {
+        location.reload()
+    });
     // when clear button is clicked the local storage is cleared and the page reloaded if the user wants which is optional
     $(".clearBtn").on ("click", function () {
         localStorage.clear()
-        location.reload()
-    });
-
-    // when the refresh button is clicked the added task persists
-    $("refreshBtn").on ("click", function () {
         location.reload()
     });
    
