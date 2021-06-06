@@ -56,4 +56,5 @@ $(document).ready(function () {
     $("refreshBtn").on ("click", function () {
         location.reload()
     });
+   
 });
