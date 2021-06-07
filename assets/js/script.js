@@ -1,18 +1,22 @@
 // Displaying the date at the top of the page below the heading
-var dateEl = moment().format('LLLL');
-$("#currentDay").text(dateEl);
+var update = function () {
+    var dateEl = moment().format('LLLL');
+    $("#currentDay").text(dateEl);
+}
 $(document).ready(function () {
- 
+    update();
+    setInterval(update, 1000);
+
     // save button click handler
     // the selector description is returning every siblings
-    $(".saveBtn").on ("click", function () {
+    $(".saveBtn").on("click", function () {
         var timeEl = $(this).parent().attr("id");
-        var taskInput=$(this).siblings(".description").val();
-        localStorage.setItem(timeEl,taskInput);
+        var taskInput = $(this).siblings(".description").val();
+        localStorage.setItem(timeEl, taskInput);
     });
-  
+
     // The daily tasks are being are being retrieved from localStorage
-    var toDo = function() {
+    var toDo = function () {
         $("#9 .description").val(localStorage.getItem("9"));
         $("#10 .description").val(localStorage.getItem("10"));
         $("#11 .description").val(localStorage.getItem("11"));
@@ -28,7 +32,7 @@ $(document).ready(function () {
     hourEl();
 
     // defining variables to add color to th past current and future event
-    
+
     function hourEl() {
         var currentHour = moment().hour();
         $(".time-block").each(function () {
@@ -47,13 +51,13 @@ $(document).ready(function () {
         })
     }
     // when the refresh button is clicked the added task persists
-    $(".refreshBtn").on ("click", function () {
+    $(".refreshBtn").on("click", function () {
         location.reload()
     });
     // when clear button is clicked the local storage is cleared and the page reloaded if the user wants which is optional
-    $(".clearBtn").on ("click", function () {
+    $(".clearBtn").on("click", function () {
         localStorage.clear()
         location.reload()
     });
-   
+
 });
