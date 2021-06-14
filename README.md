@@ -20,10 +20,13 @@ This planner helps the user to add important events manage my time effectively.
 
 - When the user click on the clear button, it clears the local storage and refreshes the page and the tasks are emptied to start new.
 
-## Work Day Schedule Mock up
+## Work Day Schedule Demo
 
 <img src="./assets/refresh.png" alt="refresh page" height = 300 width= 500 />
 <img src="./assets/clear.png" alt="refresh page" height = 300 width= 500 />
+
+## Deployed Site
+<https://sindhu-sp.github.io/Work-Day-Scheduler/>
 
 ## Technologies Used:
 - HTML
