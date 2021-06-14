@@ -4,8 +4,8 @@ var update = function () {
     $("#currentDay").text(dateEl);
 }
 $(document).ready(function () {
-    update();
-    setInterval(update, 1000);
+    // update();
+    // setInterval(update, 1000);
 
     // save button click handler
     // the selector description is returning every siblings
@@ -29,7 +29,10 @@ $(document).ready(function () {
 
     };
     toDo();
+    // update();
+    // setInterval(update, 1000);
     hourEl();
+    
 
     // defining variables to add color to th past current and future event
 
@@ -48,6 +51,8 @@ $(document).ready(function () {
             } else {
                 $(this).removeClass(["past", "present"]).addClass("future");
             }
+            update();
+            setInterval(update, 1000);
         })
     }
     // when the refresh button is clicked the added task persists
