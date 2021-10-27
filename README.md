@@ -1,10 +1,10 @@
 # Work-Day-Scheduler
 
-## About this challenge
-This challenge is to create a daily planner, for an employee with a busy schedule.
-This planner helps the user to add important events manage my time effectively.
+## About this planner
+This challenge is to create a daily planner, for a user with a busy schedule.
+This planner helps the user to add important events manage their time effectively.
 
-## In this Challenge
+## Criteria
 
 - When the user opens the planner, then the current day is displayed at the top of the calendar.
 
